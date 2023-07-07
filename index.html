@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head Start -->
+    <head>
+        <title>Student Enrollment Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    </head>
+    <!-- Head End -->
+    <!-- Body Start -->
+    <body>
+        <h2>Student Enrollment Form</h2>
+        <div class="container">
+            <!-- Div for filling the data -->
+            <div class="Form-container">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" id="name" class="form-control" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" id="email" class="form-control" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td><input type="url" id="website" class="form-control" value="" target="_blank"></td>
+                        </tr>
+                        <tr>
+                            <td>Image link</td>
+                            <td><input type="url" id="imglink" class="form-control" value="" ></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" id="male" class="Male" value="Male" name="gender">
+                                <label for="Male">Male</label>
+                                <input type="radio" id="female" class="Male" value="Female" name="gender">
+                                <label for="Female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Skills</td>
+                            <td>
+                                <input type="checkbox" id="java" class="Java" value="Java" name="skills">
+                                <label for="Java">Java</label>
+                                <input type="checkbox" id="html" class="HTML" value="HTML" name="skills">
+                                <label for="Html">HTML</label>
+                                <input type="checkbox" id="css" class="CSS" value="CSS" name="skills">
+                                <label for="Css">CSS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" id="submit">Enroll Student</button>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger" id="clear">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            <!-- Div for filling the data Ends -->
+            <!-- Div for Line -->
+            <div class="col-sm-3 d-none d-sm-block">
+                <p id="vertical"></p>
+            </div>
+            <!-- Div for Line Ends -->
+            <!-- Div for Displaying the data -->
+            <div class="display">
+                <br>
+                <h4 style="text-align: center;">Enrolled Students</h4>
+                <table class="table table-bordered table-condensed table-stripped" id="tableBordered">
+                    <thead id="outputTable">
+                    <tr>
+                        <td style="background-color:yellowgreen; width:60%">Description</td>
+                        <td style="background-color:yellowgreen;" id="image">Image</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <!-- Div for Displaying the data Ends -->
+        </div>
+        <h6>Copyright @ Saikanth Gunti</h6>
+        <script src="script.js"></script>
+    </body>
+    <!-- Body End -->
+</html>
